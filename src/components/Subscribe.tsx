@@ -9,7 +9,6 @@ export default function Subscribe() {
     e.preventDefault()
     if (!email) return
     setSubmitted(true)
-    // Here you would normally POST to a service like ConvertKit, Mailchimp, etc.
   }
 
   return (
@@ -18,7 +17,7 @@ export default function Subscribe() {
       <p className="text-gray-400 mb-6">Get the latest AI drops, features, and upgrades direct to your inbox.</p>
 
       {submitted ? (
-        <p className="text-green-400 font-semibold">Thank you! You're on the list.</p>
+        <p className="text-green-400 font-semibold">Thank you! You&apos;re on the list.</p>
       ) : (
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
           <input
